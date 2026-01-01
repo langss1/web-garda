@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download, Shield, Zap, Lock, Info, Star, Mail, ExternalLink, Menu, X, Smartphone, CheckCircle, ArrowRight, MessageCircle, Heart } from 'lucide-react';
-import teaserImage from '/teaser.png';
+import teaserImage from './assets/teaser.png';
+import protektifImage from './assets/protektif.png';
+import chatbotImage from './assets/chatbot.png';
+import supportImage from './assets/support.png';
+import logoImage from './assets/logo_garda.jpg';
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +43,7 @@ const App = () => {
             className="flex items-center gap-3"
           >
             <div className="w-10 h-10 rounded-xl flex items-center justify-center overflow-hidden shadow-lg shadow-emerald-200 bg-white">
-              <img src="/logo_garda.jpg" alt="Antigravity Logo" className="w-full h-full object-cover" />
+              <img src={logoImage} alt="Antigravity Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-2xl font-bold tracking-tight text-slate-900">GardaWara<span className="text-emerald-500">AI</span></span>
           </motion.div>
@@ -105,7 +109,7 @@ const App = () => {
             >
               <span className="px-5 py-2 rounded-full bg-white border border-emerald-100 text-emerald-600 text-sm font-bold shadow-sm flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full overflow-hidden flex items-center justify-center">
-                  <img src="/logo_garda.jpg" alt="Logo" className="w-full h-full object-cover" />
+                  <img src={logoImage} alt="Logo" className="w-full h-full object-cover" />
                 </div> #1 AI Anti-Judi Protection
               </span>
             </motion.div>
@@ -152,7 +156,7 @@ const App = () => {
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-[2rem] opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-slate-200 border-4 border-white bg-white">
-              <img src="/teaser.png" alt="Dashboard GardaWara" className="w-full h-auto" />
+              <img src={teaserImage} alt="Dashboard GardaWara" className="w-full h-auto" />
 
               {/* Floating Stats Card Animation */}
               <motion.div
@@ -162,7 +166,7 @@ const App = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center overflow-hidden border-2 border-white shadow-sm">
-                    <img src="/logo_garda.jpg" alt="Logo" className="w-full h-full object-cover" />
+                    <img src={logoImage} alt="Logo" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Status Proteksi</p>
@@ -198,13 +202,13 @@ const App = () => {
                 desc: "AI Canggih dan protektif melebihi VPN dan blokir situs pemerintah."
               },
               {
-                icon: <img src="/chatbot.png" alt="Chatbot" className="w-10 h-10 object-contain" />,
+                icon: <img src={chatbotImage} alt="Chatbot" className="w-10 h-10 object-contain" />,
                 color: "bg-blue-50",
                 title: "Chatbot",
                 desc: "Chatbot untuk dukungan psikologis yang siap mendengarkan kapan saja."
               },
               {
-                icon: <img src="/support.png" alt="Support" className="w-10 h-10 object-contain" />,
+                icon: <img src={supportImage} alt="Support" className="w-10 h-10 object-contain" />,
                 color: "bg-rose-50",
                 title: "Support",
                 desc: "Supportif notifikasi psikologis untuk menjaga kesehatan mental Anda."
@@ -417,7 +421,7 @@ const App = () => {
             <div className="col-span-1 md:col-span-2 pr-10">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden shadow-sm">
-                  <img src="/logo_garda.jpg" alt="Logo" className="w-full h-full object-cover" />
+                  <img src={logoImage} alt="Logo" className="w-full h-full object-cover" />
                 </div>
                 <span className="text-2xl font-bold text-slate-900">GardaWara<span className="text-emerald-500">AI</span></span>
               </div>
